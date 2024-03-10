@@ -1,0 +1,216 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1C1B1A;
+
+
+}
+
+.heading {
+    text-align: center;
+    display: block;
+}
+
+.heading-primary {
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    font-family: "Jost";
+    padding: 1rem;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 3px;
+    position: relative; 
+}
+.heading-primary:hover {
+    color: #1260cc; 
+}
+.heading-primary::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    bottom: -3px;
+    left: 0;
+    transition: all .2s ease-out;
+}
+.heading-primary:hover::after {
+    width: 100%;
+}
+  
+.container {
+    width: 40%;
+    height: 40rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, .4);
+    background-color: black;
+    padding: 1rem;
+}
+
+.heading-secondary {
+    display: inline-block;
+    color: white;
+    font-size: 1.3rem;
+    font-family: "Jost";
+    padding: 1rem;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 3px;
+    position: relative; 
+}
+.heading-secondary:hover {
+    color: #1260cc; 
+}
+.heading-secondary::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    bottom: 1px;
+    left: 0;
+    transition: all .2s ease-out;
+}
+.heading-secondary:hover::after {
+    width: 100%;
+}
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    text-align: center;
+}
+
+.registration {
+    margin-top: 3rem;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form {
+    width: 80%;
+    
+}
+.form__logoBox {
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__img {
+    display: block;
+    margin-right: 2rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.form__group:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.form__group:hover {
+    transform: scale(1.04);
+}
+
+.form__input {
+    font-family: "Jost";
+    font-size: 1.2rem;
+    padding: .6rem 1rem;
+    border-radius: 5px;
+    background-color: #1C1B1A;
+    font-family: "Jost";
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    display: block;
+    color: white;
+}
+
+.form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border-bottom: 4px solid #1260cc;
+}
+
+.form__input:focus:invalid {
+    border-bottom: 5px solid #ff7730;
+}
+
+.form__input::-webkit-input-placeholder {
+    color: #999;
+}
+
+.form__input:placeholder-shown + .form__label{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+
+}
+
+.form__label {
+    font-size: 1rem;
+    font-family: "Jost";
+    color: #1260cc;
+    font-weight: 500;
+    margin-left: 1rem;
+    margin-top: .3rem;
+    display: block;
+    transition: all .3s;
+
+}
+
+.form_btn {
+    width: 50%;
+}
+
+.form__input-btn {
+    border: none;
+    background-color: #1C1B1A;
+    padding: 1rem;
+    width: 100%;
+    color: white;
+    font-family: "Jost";
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.form__input-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, .2);
+}
+
+.form__input-btn:active {
+    transform: translateY(-2px);
+    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);  */
+}
+
+.form__input-btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s; 
+}

@@ -1,0 +1,45 @@
+.countingDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    /* background-color: red; */
+    margin-bottom: 2rem;
+}
+
+.userCounting {
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid white;
+    width: 50%;
+    text-align: center;
+    align-self: center;
+    
+    
+}
+
+.projectCounting {
+    flex: 1;
+}
+
+.count {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    font-family: "Jost";
+}
+
+.countHeading {
+    font-size: 1.2rem;
+    color: #1260cc;
+    font-family: "Jost";
+    font-weight: 900;
+    transition: all .3s ;
+}
+
+.countHeading:hover {
+    transform: scale(1.2);
+}
+

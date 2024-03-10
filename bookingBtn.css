@@ -1,0 +1,57 @@
+.ProjectBtn {
+    position: relative;
+    display: inline-block;
+    background-color: #1260cc;
+    padding: 15px 60px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: "Jost";
+    border: none;
+    outline: none;
+    @media(max-width:900px) {
+        padding: 13px 45px;
+    }
+}
+
+.ProjectBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ProjectBtn:active {
+    transform: translateY(1px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.ProjectBtn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.Btn-white {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.Btn-white::after {
+    background-color: #1260cc;
+    border-radius: 10px;
+}
+
+.ProjectBtn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 1;
+}
+
+.Btn-animated {
+    animation: moveInBottom 3s ease-out;
+}

@@ -1,0 +1,78 @@
+.popUpContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popUp {
+    width: 30%;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,50%) scale(0.1);
+    z-index: 1000;
+    visibility: hidden;
+    transition: all .2s ease-out;
+}
+
+.openPopUp {
+    visibility: visible;
+    top: 0%;
+    transform: translate(-50%,50%) scale(1);
+}
+.popUpImg {
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    margin-top: -6rem;
+    margin-left: 5.5rem;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    @media(max-width:900px) {
+        margin-left: 4rem;
+    }
+}
+
+.popUpHeading {
+    font-size: 1.5rem;
+    color: #1260cc;
+    display: block;
+    text-align: center;
+    font-family: "Jost";
+    
+}
+
+.popUpText {
+    font-size: 1rem;
+    color: black;
+    font-family: "Jost";
+    padding: 1rem;
+    text-align: center;
+}
+
+.closePopUp {
+    width: 50%;
+    background-color: #1260cc;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 6rem;
+}
+
+.closePopUp:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.closePopUp:active {
+    transform: translateY(-1px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+}

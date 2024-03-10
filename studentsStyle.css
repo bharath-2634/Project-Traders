@@ -1,0 +1,313 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  background-color: black;
+  font-family: "Jost";
+  color: black;
+}
+
+.student-container {
+    padding: 3rem;
+}
+.dont-know {
+    display: flex;
+    height: 20rem;
+    width: 60%;
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 3.5rem;
+    @media(max-width:1000px) {
+        height: 18rem;
+        width: 55%;
+        
+    }
+    @media(max-width:900px) {
+        height: 14rem;
+        
+    }
+    @media(max-width:750px) {
+        margin: 0 auto;
+    }
+    @media(max-width:700px) {
+        height: 8rem;
+    }
+}
+.dont-konw-img {
+    width: 20rem;
+    height: 15rem;
+    font-size: 3rem;
+    margin: auto 2rem;
+
+    @media(max-width:1200px) {
+        width: 17rem;
+        height: 13rem;
+    }
+
+    @media(max-width:1000px) {
+        width: 15rem;
+        height: 8rem;
+        font-size: 2rem;
+    }
+
+    @media(max-width:900px) {
+        width: 12rem;
+        height: 6rem;
+        
+    }
+    @media(max-width:700px) {
+        /* border-radius: 20px; */
+    }
+}
+
+.dont-know-text {
+    color: white;
+    font-size: 2rem;
+    margin: auto 0;
+    text-align: center;
+    @media(max-width:1200px) {
+        font-size: 1.7rem;
+    }
+    @media(max-width:1000px) {
+        font-size: 1.5rem;
+    }
+    @media(max-width:900px) {
+        font-size: 1rem;
+    }
+    @media(max-width:700px) {
+        font-size: 14px;
+    }
+}
+
+.dont-copy {
+    display: flex;
+    height: 18rem;
+    width: 60%;
+    border: 2px solid white;
+    border-radius: 3.5rem ;
+    float: right;
+}
+
+.dont-copy-img {
+    width: 17rem;
+    height: 10rem;
+    font-size: 3rem;
+    align-self: center;
+}
+
+.dont-copy-text {
+    color: white;
+    font-size: 1.5rem;
+    margin: auto 0;
+    text-align: center;
+    margin-right: 5rem;
+}
+
+.u-margin-top {
+    margin-top: 4rem;
+}
+
+.session {
+    margin-top: 4rem;
+
+    display: flex;
+    height: 18rem;
+    padding: 1rem;
+    width: 60%;
+    border: 2px solid white;
+    border-radius: 3.5rem ;
+}
+
+.project-img {
+    width: 27rem;
+    height: 15rem;
+    font-size: 3rem;
+    align-self: center;
+}
+
+.project-text {
+    color: white;
+    font-size: 1.5rem;
+    margin: auto 0;
+    text-align: center;
+    margin-right: 5rem;
+}
+
+.projects {
+    display: flex;
+    height: 18rem;
+    width: 60%;
+    border: 2px solid white;
+    
+    border-radius: 3.5rem ;
+    float: right;
+}
+
+.projects-text {
+    color: white;
+    font-size: 1.5rem;
+    margin: auto 0;
+    text-align: center;
+    margin-right: 5rem;
+}
+
+.projects-img {
+    width: 17rem;
+    height: 10rem;
+    font-size: 3rem;
+    align-self: center;
+}
+
+.student {
+    display: inline-block;
+    margin-top: 2rem;
+    
+    
+}
+
+/* Navigation Bar Styling */
+
+.naviation_bar {
+    padding: 2rem;
+}
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    @media(max-width:800px) {
+      margin-right: 2rem;
+    }
+     
+  }
+  .nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  .nav__item {
+    list-style: none; 
+  }
+  .nav__item:not(:last-child) {
+    margin-right: 2rem; 
+  }
+  .nav__link {
+    text-decoration: none;
+    color: #1260cc;
+    font-family: "Jost";
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    transition: all .2s;
+    position: relative;
+    display: inline-block;
+    @media(max-width:850px) {
+      font-size: 1rem;
+    } 
+  }
+  .nav__link::after {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 0%;
+      background-color: white;
+      bottom: -5px;
+      left: 0;
+      transition: all .2s ease-out; 
+  }
+  .nav__link:hover::after {
+      width: 100%; 
+  }
+
+  .naviation_bar .toggle-btn {
+    color: #1260CC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .dropDownMenu {
+    display: none;
+    position: absolute;
+    top:3rem;
+    height:0;
+    right: 8rem;
+    width: 10rem;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: height .3s ease;
+  
+  }
+  .open {
+    height: 11rem;
+  }
+  .dropDownMenu li {
+    padding: .5rem;
+    list-style:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgba(255, 255, 255, .1);
+  }
+  
+  @media(max-width:700px) {
+    .naviation_bar .nav__list {
+      display: none;
+    }
+    .naviation_bar .toggle-btn {
+      display: block;
+    }
+    .logo-box {
+      width: 80%;
+    }
+    .dropDownMenu {
+      display: block;
+    }
+  }
+  
+  @media(max-width:550px) {
+    
+    .dropDownMenu {
+      margin-top: 1.2rem;
+      left: 6rem;
+      width: 60%;
+    }
+  }
+  
+  .drop__link {
+    text-decoration: none;
+    color: #1260cc;
+    font-family: "Jost";
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    transition: all .2s;
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+.student-footer {
+    border-top: 3px solid white;
+    width: 100%;
+    background-color: #000;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy-txt {
+    font-size: 1rem;
+    
+    color: #BAB6B2;
+}

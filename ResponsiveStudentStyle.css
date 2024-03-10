@@ -1,0 +1,403 @@
+.dont-know {
+    background-color: red;
+    @media(max-width:700px) {
+        height: 8rem;
+        border-radius:10px;
+    }
+    @media(max-width:500px) {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+}
+
+.dont-konw-img {
+    @media(max-width:500px) {
+        width: 50px;
+        height: 50px;
+    }
+}
+.dont-know-text {
+    @media(max-width:600px) {
+        font-size: 8px;
+    }
+}
+
+/* Dont-copy block */
+
+.dont-copy {
+
+    @media(max-width:1000px) {
+        height: 18rem;
+        width: 55%;
+    }
+
+    @media(max-width:900px) {
+        height: 14rem;
+    }
+
+    @media(max-width:750px) {
+        float: none;
+        margin: 0 auto;
+    }
+
+    @media(max-width:700px) {
+        border-radius:10px;
+        height: 8rem;
+    }
+
+    @media(max-width:500px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.dont-copy-img {
+
+    @media(max-width:1200px) {
+        width: 17rem;
+        height: 8rem;
+        font-size: 2rem;
+    }
+
+    @media(max-width:900px) {
+        width: 15rem;
+        height: 6rem;
+        font-size: 1rem;
+    }
+
+    @media(max-width:500px) {
+        width: 6rem;
+        height: 4rem;
+        font-size: .5rem;
+    }
+}
+
+.dont-copy-text {
+
+    @media(max-width:1200px) {
+        font-size: 1.4rem;
+        margin-right: 3rem;
+    }
+
+    @media(max-width:900px) {
+        font-size: 1rem;
+        margin-right: 1.5rem;
+    }
+
+    @media(max-width:700px) {
+        font-size: .6rem;
+        margin-right: 1rem;
+    }
+
+    @media(max-width:500px) {
+        font-size: 8px;
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+}
+
+/* Project -traders Comes Block */
+
+.session {
+    @media(max-width:1000px) {
+        height: 16rem;
+        width: 50%;
+        padding: 0;
+    }
+    @media(max-width:900px) {
+        height: 10rem;
+        width: 47%;
+    }
+    @media(max-width:750px) {
+        margin: 0 auto;
+    }
+    @media(max-width:700px) {
+        border-radius: 10px;
+    }
+    @media(max-width:500px) {
+        flex-direction: column;
+    }
+}
+
+.project-img {
+
+    @media(max-width:1200px) {
+        width: 21rem;
+        height: 12rem;
+        font-size: 2rem;
+        margin-right: 1.5rem;
+    }
+
+    @media(max-width:900px) {
+        width: 15rem;
+        height: 6rem;
+        margin-right: 0rem;
+        margin-left: 18px;
+    }
+    @media(max-width:800px) {
+        margin-right: 6px;
+    }
+    @media(max-width:500px) {
+        width:4rem;
+        height: 4rem;
+    }
+}
+
+.project-text {
+    @media(max-width:1200px) {
+        font-size: 1.2rem;
+        
+    }
+    @media(max-width:900px) {
+        font-size:1rem;
+    }
+    @media(max-width:800px) {
+        font-size:.7rem;
+        margin-right: 1rem;
+    }
+}
+
+/* project-traders project block  */
+
+.projects {
+    @media(max-width:1000px) {
+        height: 16rem;
+        width: 50%;
+        padding: 0;
+    }
+    @media(max-width:750px) {
+        float: none;
+        margin: 0 auto;
+    }
+    @media(max-width:700px) {
+        border-radius: 10px;
+        height: 10rem;
+    }
+    @media(max-width:500px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.projects-img {
+    @media(max-width:1200px) {
+        width: 13rem;
+        height: 8rem;
+        font-size: 2rem;
+    }
+    @media(max-width:600px) {
+        width: 8rem;
+        height: 6rem;
+    }
+    @media(max-width:500px) {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+.projects-text {
+    @media(max-width:1200px) {
+        font-size: 1rem;
+        margin-right: 3rem;
+    }
+    @media(max-width:700px) {
+        margin-right: 1rem;
+        font-size: .6rem;
+    }
+}
+
+/* DropDown Menu Styling */
+
+.naviation_bar {
+    padding: 2rem;
+}
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    @media(max-width:800px) {
+      margin-right: 2rem;
+    }
+     
+  }
+  .nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  .nav__item {
+    list-style: none; 
+  }
+  .nav__item:not(:last-child) {
+    margin-right: 2rem; 
+  }
+  .nav__link {
+    text-decoration: none;
+    color: #1260cc;
+    font-family: "Jost";
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    transition: all .2s;
+    position: relative;
+    display: inline-block;
+    @media(max-width:850px) {
+      font-size: 1rem;
+    } 
+  }
+  .nav__link::after {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 0%;
+      background-color: white;
+      bottom: -5px;
+      left: 0;
+      transition: all .2s ease-out; 
+  }
+  .nav__link:hover::after {
+      width: 100%; 
+  }
+
+  .naviation_bar .toggle-btn {
+    color: #1260CC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .dropDownMenu {
+    display: block;
+    position: absolute;
+    top:3rem;
+    height:0;
+    left: 3rem;
+    width: 10rem;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: height .3s ease;
+  
+  }
+  .open {
+    height: 11rem;
+  }
+  .dropDownMenu li {
+    padding: .5rem;
+    list-style:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgba(255, 255, 255, .1);
+  }
+  
+  @media(max-width:700px) {
+    .naviation_bar .nav__list {
+      display: none;
+    }
+    .naviation_bar .toggle-btn {
+      display: block;
+    }
+    .logo-box {
+      width: 80%;
+    }
+    .dropDownMenu {
+      display: block;
+      z-index: 1000;
+    }
+  }
+  
+  @media(max-width:550px) {
+    
+    .dropDownMenu {
+      margin-top: 1.2rem;
+      left: 6rem;
+      width: 60%;
+    }
+  }
+  
+  .drop__link {
+    text-decoration: none;
+    color: #1260cc;
+    font-family: "Jost";
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    transition: all .2s;
+    position: relative;
+    display: inline-block;
+    
+  }
+
+  /* Lets Work Section  */
+.student-block {
+    display: block;
+    margin: 2rem auto;
+    background-color: #1C1B1A;
+    height: 19rem;
+    width: 18rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.student-block:hover {
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, .4);
+    transform: scale(1.04);
+}
+
+.lamp-logo {
+    padding: 0rem;
+    color: white;
+    display: block;
+    height: 3rem;
+    width: 3rem;
+}
+
+.contact-me {
+    padding: 0;
+}
+
+.work-btn {
+    margin-right: 1rem;
+    margin-top: 7rem;
+}
+
+.work-heading {
+    padding: 1rem;
+    font-size: 2rem;
+    display: block;
+    font-weight: 900;
+    line-height: 1.5;
+    color: #1260cc;
+    margin-top: 1rem;
+}
+
+.next {
+    float: right;
+    padding: .8rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #BaB6B2;
+    color: white;
+}
+
+.work-btn {
+    margin-right: 1rem;
+    margin-top: -2rem;
+}
+
+.next-btn {
+    text-align: center;
+}
+
+.next:hover {
+    background-color: #1C1B1A;
+}
+
+.next:hover .next-btn {
+    color: white;
+}
